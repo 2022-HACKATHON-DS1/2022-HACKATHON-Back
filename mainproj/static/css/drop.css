@@ -1,9 +1,8 @@
 .dropdown{
     display: none;
     position: absolute;
-    left: 820px;
-    top: 41px;
-
+    margin-top: 5px;
+    margin-left: 270px;
 }
 
 .dropdown li{
