@@ -4,19 +4,18 @@
 img{
     margin-top: 10px;
     padding-left:18px;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
 }
 
 .adtitle{
     box-sizing: border-box;
-    position: absolute;
     width: 139px;
     height: 53px;
     background: #6D70D7;
     border: 1px solid #000000;
     border-radius: 37px;
-    margin-top: 10px;
+    margin-top:-630px;
     margin-left: 0.7em;
     
     font-family: 'Lilita One';
@@ -25,14 +24,13 @@ img{
     font-size: 30px;
     line-height: 50px;
     text-align: center;
-    
     color: #E0E06B;
     -webkit-text-stroke: 1px black;
 }
 
 .line{
     margin:0 auto;
-    margin-top: 35px;
+    margin-top: 50px;
     background: #DFDDD8;
     border: 2px solid #000000;
     box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);

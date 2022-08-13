@@ -1,48 +1,56 @@
-{% load static %}
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
-    <title>ad</title>
-    <script src="https://kit.fontawesome.com/1c941d1499.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script src="https://kit.fontawesome.com/1c941d1499.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/upload.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/event.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/drop.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/event.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/upload.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/drop.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
 </head>
 <body>
-    <div class="container">
-        <div class="navBox">
-            <div class="Logo">Dlstodsozjt</div>
-            <i class="fa-solid fa-bars fa-2x" id="drop"></i>
+  <div class="container">
+    <div class="navBox">
+        <div class="Logo"><a href="{% url 'home' %}" 
+            style="text-decoration: none;  color: #E0E06B; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);-webkit-text-stroke: 1px black;">
+            Dlstodsozjt</a></div>
+      <i class="fa-solid fa-bars fa-2x" id="drop"></i>
+    </div>
                     <div class="dropdown">
                         <i class="fa-solid fa-caret-left"></i>
                         <li class="drop-box"><a href="{% url 'newpost' %}" style="text-decoration: none; color:#fff">새 글 작성</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">마이페이지</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">사진관 찾기</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">이벤트</a></li>
+                        <li class="drop-box"><a href="{% url 'mypage' %}" style="text-decoration: none; color:#fff">마이페이지</a></li>
+                        <li class="drop-box"><a href="{% url 'map' %}" style="text-decoration: none; color:#fff">사진관 찾기</a></li>
+                        <li class="drop-box"><a href="{% url 'event' %}" style="text-decoration: none; color:#fff">이벤트</a></li>
                     </div>
-        </div>
-        <div class="adtitle">AD</div>
-        <div class="line">
-            
-            <a href="https://projectlion.io/?utm_source=PL&utm_medium=SA&utm_campaign=PL_GGL_Search_Ondemand&utm_content=home&gclid=CjwKCAjw9NeXBhAMEiwAbaY4lmwMcQz6Pvbp7_JnS3DW2TM9KrliTHtEUu65fCZ7ybzorupIZeCgIBoCQUgQAvD_BwE" target="_blank"> <img src="{% static 'img/01_.png' %}" style=" margin-top: 50px;"></a>
-            <a href="https://lifefourcuts.com/noticemain/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=12061964&t=board"  target="_blank"><img src="{% static 'img/02_.png' %}" style="  margin-top: 50px;"></a>
-            <a href="https://lifefourcuts.com/Event02/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6NTt9&bmode=view&idx=10611389&t=board"  target="_blank"><img src="{% static 'img/03_.png' %}"></a>
-            <a href="https://hilightbrands-kodak.co.kr/index.html?utm_medium=KSA&utm_source=Google&utm_campaign=Linear&utm_content=Main&gclid=CjwKCAjw9NeXBhAMEiwAbaY4lrrHoawzH8NH6PMr_qumbF3P2okV1H6CzGmd4eRJ4RskhhDK3DnSWhoC0HQQAvD_BwE"  target="_blank"><img src="{% static 'img/04_.png' %}"></a>
-            <a href="https://m.facebook.com/310865092299838/posts/5156555517730747"  target="_blank"><img src="{% static 'img/05_.jpg' %}"style="  margin-bottom: 10px;"></a>
-            
-            
-            
+    
 
-        </div>
-    </div>
-    <script src="{% static 'js/upload.js' %}"></script>
-    <script src="{% static 'js/drop.js' %}"></script>
-</body>
-</html>
+                    <div class="line">
+            
+                        <a href="https://projectlion.io/?utm_source=PL&utm_medium=SA&utm_campaign=PL_GGL_Search_Ondemand&utm_content=home&gclid=CjwKCAjw9NeXBhAMEiwAbaY4lmwMcQz6Pvbp7_JnS3DW2TM9KrliTHtEUu65fCZ7ybzorupIZeCgIBoCQUgQAvD_BwE" target="_blank"> <img src="{% static 'img/01_.png' %}" style=" margin-top: 50px;"></a>
+                        <a href="https://lifefourcuts.com/noticemain/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=12061964&t=board"  target="_blank"><img src="{% static 'img/02_.png' %}" style="  margin-top: 50px;"></a>
+                        <a href="https://lifefourcuts.com/Event02/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6NTt9&bmode=view&idx=10611389&t=board"  target="_blank"><img src="{% static 'img/03_.png' %}"></a>
+                        <a href="https://hilightbrands-kodak.co.kr/index.html?utm_medium=KSA&utm_source=Google&utm_campaign=Linear&utm_content=Main&gclid=CjwKCAjw9NeXBhAMEiwAbaY4lrrHoawzH8NH6PMr_qumbF3P2okV1H6CzGmd4eRJ4RskhhDK3DnSWhoC0HQQAvD_BwE"  target="_blank"><img src="{% static 'img/04_.png' %}"></a>
+                        <a href="https://m.facebook.com/310865092299838/posts/5156555517730747"  target="_blank"><img src="{% static 'img/05_.jpg' %}"style="  margin-bottom: 10px;"></a>
+                        
+                        
+                        
+            
+                    </div>
+            
+                    <div class="adtitle">AD</div>
+                </div>
+                <script src="{% static 'js/upload.js' %}"></script>
+                <script src="{% static 'js/drop.js' %}"></script>
+            </body>
+            </html>

@@ -1,8 +1,7 @@
 .dropdown{
     display: none;
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 270px;
+    margin-top: 0px;
+    margin-left: 310px;
 }
 
 .dropdown li{
@@ -27,10 +26,9 @@
     display: block;
 }
 
-.fa-caret-left{
+.fa-caret-down{
     font-size: 20px;
-    position: absolute;
     display: inline;
-    left: 105px;
-    top: 2px;
+    margin-left: 73px;
+
 }

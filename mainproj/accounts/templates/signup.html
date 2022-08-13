@@ -1,18 +1,50 @@
-<h1>회원가입 페이지 </h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://kit.fontawesome.com/1c941d1499.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<form action="{% url 'signup' %}" method="POST" >
-{% csrf_token %}
-    Username:
+    </head>
+    <body>
+
+        
+    {% if error %}
+    {{ error }}
     <br>
-    <input name='username' type='text' value=''>
     <br>
-    Password:
-    <br>
-    <input name='password1' type="password" value=''>
-    <br>
-    Confirm Password:
-    <br>
-    <input name='password2' type="password" value=''>
-    <br>
-    <input class='btn btn-primary' type="submit" value="signup">
-</form>
+    {% endif %}
+
+    <div class="container">
+        <div class="Logo-title">Welcome</div>
+        <div class="Logo-title2">to</div>
+        <div class="Logo-title3">Distodsozjt</div>
+
+        
+
+    <form method="POST" action="{% url 'signup' %}">
+        {% csrf_token %}
+        <br>
+        <input name="username" type="text" value="" class="id-box" placeholder="ID">
+        <br>
+        <br>
+        <input name="password" type="password" value="" class="pw-box" placeholder="PASSWORD">
+        <br>
+        <br>
+        <input name="c-password" type="password" value="" class="pw-box" placeholder="Confirm PW">
+        <a href="{% url 'login' %}">
+        <input class="btn btn-primary" type="submit" value="SignUp" id="login-box">
+        </a>
+    </form>
+</div>
+
+</body>
+</html>
