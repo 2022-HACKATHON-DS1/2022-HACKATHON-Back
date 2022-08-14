@@ -22,7 +22,10 @@ def mypage(request):
     else:
         posts = Post.objects.filter(date__year=year)
 
-    return render(request, 'mypage.html', {'posts':posts})
+    queryset1 = Post.objects.all()
+    count = queryset1.count()
+
+    return render(request, 'mypage.html', {'posts':posts, 'count':count})
 
 def postformcreate(request):
     if request.method == 'POST' or request.method == 'FILES':

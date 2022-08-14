@@ -39,8 +39,8 @@
     <div class="title">{{ post.title }}</div>
     <div class="userImgNameDate">
       <div class="userImgName">
-        <div class="userImg"><img class='userImg'></div>
-        <div class="userName">USER 01</div>
+        <div class="userImg"><img class='userImg' src="{% static 'img/IUProfile.PNG' %}"></div>
+        <div class="userName">{{ user.username }}</div>
       </div>  
       <div class="Date">작성일: {{ post.date | date:'Y-m-d'}}</div>
     </div>
