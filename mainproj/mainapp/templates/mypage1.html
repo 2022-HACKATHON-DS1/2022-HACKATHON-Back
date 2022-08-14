@@ -1,0 +1,22 @@
+{% load static %}
+<h1>마이페이지</h1>
+
+<div>
+    <a href="{% url 'home' %}">메인페이지</a>
+</div>
+
+<ul class="nav-container">
+    <li class="nav-name"><a href="{% url 'mypage' %}">전체</a>  {{ count }}</li>
+    <li class="nav-name"><a href="?year=2022">2022</a></li>
+    <li class="nav-name"><a href="?year=2021">2021</a></li>
+    
+</ul>
+
+
+
+{% for post in posts %}
+        <a href="{% url 'detail' post.id %}"><img src="{{ post.image.url }}" alt="" height="200"></a>
+        <h4>작성날짜: {{ post.date | date:'Y-m-d' }}</h4>
+{% endfor %}
+
+

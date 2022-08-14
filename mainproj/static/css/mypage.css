@@ -1,0 +1,167 @@
+@import 'drop.css';
+body{
+  margin: 0;
+  background-color: gray;
+}
+.container {
+  padding: 40px;
+  background-color: #DFDDD8;
+  width: 420px;
+  margin: 0 auto;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.Logo {
+  font-size: 2.0em;
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 40px;
+  color: #E0E06B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px black;
+}
+
+.navBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page{
+  text-align: center;
+  border: solid;
+  border-radius: 20px;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+#circle{
+  border: solid;
+  border-width: 1.5px;
+  border-radius: 50%;
+  background-color: #6D70D7;
+  width: 6.3em;
+  height: 6.3em;
+  margin: auto;
+  position: relative;
+  top: 4em;
+}
+
+.page-text{
+  margin-top: 4em;
+}
+
+.edit{
+  background-color: #E0E06B;
+  width: 370px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid;
+  margin-left: 12px;
+}
+label{
+  cursor: pointer;
+  font-size: 1em;
+}
+#chooseFile{
+  visibility: hidden;
+}
+.view{
+  background-color: #E0E06B;
+  border-radius: 3px;
+  height: 33px;
+  width: 33px;
+}
+.ang{
+  font-size: 17px;
+}
+.cam{
+  font-size: 27px;
+  margin-top: 1em;
+  margin-right: 13em;
+}
+.pic-num{
+  margin-right: 17em;
+  margin-top: -1.5em;
+}
+.view-p{
+  margin-top: -2.5em;
+  margin-left: 13.5em;
+}
+.view-but{
+  margin-left: 22em;
+  margin-top: -2.5em;
+}
+
+.img-iu{
+  width: 150px;
+  margin-left: -230px;
+  margin-top: 3em;
+}
+.img-iu2{
+  width: 150px;
+  display: flex;
+  margin-left: 11em;
+  margin-top: -13em;
+}
+.img-1{
+  width: 150px;
+  margin-left: -14.5em;
+  margin-top: 4em;
+}
+.img-2{
+  width: 150px;
+  margin-left: 9em;
+  margin-top: -14em;
+}
+.img-3{
+  width: 150px;
+  margin-left: -14.5em;
+  margin-top: 3em;
+}
+.img-4{
+  display: flex;
+  width: 150px;
+  margin-left: 11em;
+  margin-top: -14em;
+}
+.img-5{
+  display: flex;
+  width: 110px;
+  margin-top: 4em;
+  margin-left: 0.6em;
+}
+.img-6{
+  display: flex;
+  width: 110px;
+  margin-left: 12em;
+  margin-top: -23em;
+}
+.img-7{
+  display: flex;
+  width: 110px;
+  margin-top: 5em;
+  margin-left: 0.7em;
+}
+.img-8{
+  display: flex;
+  width: 110px;
+  margin-left: 12em;
+  margin-top: -22em;
+}
+
+li{
+  list-style: none;
+}
+
+.view{
+  cursor: pointer;
+}
+
+.list li.is-hidden {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
