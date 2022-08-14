@@ -1,5 +1,3 @@
-@import './drop.css';
-
 body{
     margin: 0;
     background-color: gray;
@@ -43,4 +41,21 @@ body{
     height: 400px;
     margin: 0 auto;
     margin-top: 2%;
+}
+
+.category-btn{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.category-btn button{
+    background: #6D70D7;
+    border: 1px solid #000000;
+    box-shadow: inset 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+    height: 35px;
+    width: 95px;
+    color: white;
 }
