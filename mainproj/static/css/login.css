@@ -73,6 +73,7 @@ body{
 .su{
     width: 58px;
     height: 19px;
+    display: block;
 
     font-family: 'Klee One';
     font-style: normal;

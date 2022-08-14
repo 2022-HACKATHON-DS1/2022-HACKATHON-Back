@@ -1,0 +1,46 @@
+@import './drop.css';
+
+body{
+    margin: 0;
+    background-color: gray;
+  }
+  .container {
+    padding: 40px;
+    background-color: #DFDDD8;
+    width: 420px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 2.0em;
+    font-family: "Lilita One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #E0E06B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px black;
+}
+
+.fa-magnifying-glass{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+
+#map{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
