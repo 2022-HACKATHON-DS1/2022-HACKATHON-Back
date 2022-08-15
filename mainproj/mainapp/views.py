@@ -39,3 +39,6 @@ def postformcreate(request):
 
 def event(request):
     return render(request, 'event.html')
+
+def reward(request):
+    return render(request, 'reward.html')

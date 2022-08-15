@@ -14,6 +14,7 @@ urlpatterns = [
     path('newpost/', main_views.postformcreate, name='newpost'),
     path('map/', mapapp_views.map, name='map'),
     path('event/', main_views.event, name='event'),
+    path('reward/', main_views.reward, name='reward'),
     ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
