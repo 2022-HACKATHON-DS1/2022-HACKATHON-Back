@@ -17,26 +17,20 @@
     <title>지도</title>
 </head>
 <body>
-    <div class ="container">
-        <div> 
-            
-            <div class="navBox">
-
-            <div class="title">Dlstodsozjt</div>
-                <i class="fa-solid fa-bars fa-2x" id="drop"></i>
-            </div>
-
-                    <div class="dropdown">
-                        <i class="fa-solid fa-caret-down"></i>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">새 글 작성</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">마이페이지</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">사진관 찾기</a></li>
-                        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">이벤트</a></li>
-                    </div>
-
-
-            
+    <div class="container">
+        <div class="navBox">
+            <div class="Logo"><a href="{% url 'home' %}" 
+                style="text-decoration: none;  color: #E0E06B; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);-webkit-text-stroke: 1px black;">
+                Dlstodsozjt</a></div>
+          <i class="fa-solid fa-bars fa-2x" id="drop"></i>
         </div>
+                        <div class="dropdown">
+                            <i class="fa-solid fa-caret-down"></i>
+                            <li class="drop-box"><a href="{% url 'newpost' %}" style="text-decoration: none; color:#fff">새 글 작성</a></li>
+                            <li class="drop-box"><a href="{% url 'mypage' %}" style="text-decoration: none; color:#fff">마이페이지</a></li>
+                            <li class="drop-box"><a href="{% url 'map' %}" style="text-decoration: none; color:#fff">사진관 찾기</a></li>
+                            <li class="drop-box"><a href="{% url 'event' %}" style="text-decoration: none; color:#fff">이벤트</a></li>
+                        </div>
 
         <div>
             <br>
