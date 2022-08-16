@@ -69,4 +69,4 @@ function showImg(){
     }
 }
 
-showImg();
+

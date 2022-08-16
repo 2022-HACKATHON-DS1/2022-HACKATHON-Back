@@ -1,0 +1,98 @@
+@import 'drop.css';
+body{
+    margin: 0;
+    background-color: gray;
+}
+.container {
+    padding: 40px;
+    background-color: #DFDDD8;
+    width: 420px;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.contents{
+    border:4px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 4px inset rgba(0, 0, 0, 0.15);
+    height:66vh;
+    border-radius: 25px;   
+    padding:20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.Logo {
+    font-size: 2.0em;
+    font-family: "Lilita One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #E0E06B;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px black;
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+list-style: none;
+}
+
+img {
+    border: none;
+    width: 300px;
+    height: 500px;
+    margin-left: 13px;
+    margin-top:30px;
+}
+#slider {
+    overflow:hidden;
+    position:relative;
+    height: 600px;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+.image-box {
+    width:fit-content;
+    height:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    animation: bannermove 10s linear infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes bannermove {
+0% {
+    transform: translate(0, 0);
+}
+100% {
+    transform: translate(-50%, 0);
+}
+}
+
+.mainheader{
+    position: relative;
+    z-index:3;
+    top:1em;
+    font-family: "Lilita One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #E0E06B;
+    -webkit-text-stroke: 1px black;
+
+    background-color: #6D70D7;
+    border-radius: 37px;
+    border: 2px solid black;
+    text-align:center;
+    width:140px;
+    padding:5px;
+    margin-left:10px;   
+}
