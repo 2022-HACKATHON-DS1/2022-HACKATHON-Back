@@ -44,7 +44,9 @@ body{
   margin-top: 10px;
   margin-bottom: 30px;
 }
-
+.deco{
+  text-align: right;
+}
 .main {
   margin: 10px;
   margin-bottom: 70px;

@@ -23,11 +23,12 @@
 
 		<form action="" method="POST" enctype="multipart/form-data">
 			<div class="change-box">
-				<div class="color-box">
-					<img src="3.png" class="change-img">
+				<!-- <div class="color-box"> -->
+					<img src="{{ post.image.url }}" class="change-img">
 					<div id="text-btn" onkeyup='printName()'>지은네컷</div>
-				</div>
+				<!-- </div> -->
 			</div>
+			
 
 			{% csrf_token %}
 				{{ form.content }}
