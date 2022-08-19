@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'mainapp',
     'mapapp',
     'accounts',
+    'frameapp',
 ]
 
 MIDDLEWARE = [
