@@ -24,7 +24,8 @@
     {% endif %}
 
     <div class="container">
-        <div class="Logo-title">Dlstodsozjt</div>
+        <div class="Logo-title2">Record your youth</div>
+        <div class="Logo-title">MOCORD</div>
 
         
 
@@ -38,8 +39,9 @@
         <br>
         <br>
         <input class="btn btn-primary" type="submit" value="Login" id="login-box">
+        <a href="{% url 'signup' %}"><input class="btn btn-primary" type="submit" value="SignUp" id="Singup-box"></a>
     </form>
-    <a href="{% url 'signup' %}" class="su" method="POST">Sign Up</a>
+
 </div>
 <script src="{% static 'js/login.js' %}"></script>
 </body>

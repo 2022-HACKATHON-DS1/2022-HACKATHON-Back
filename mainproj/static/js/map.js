@@ -9,7 +9,6 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-var lat,lon;
 
 if (navigator.geolocation) {
     
@@ -19,7 +18,7 @@ if (navigator.geolocation) {
         var lat = position.coords.latitude, 
             lon = position.coords.longitude; 
         
-        var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
+        var locPosition = new kakao.maps.LatLng(37.58488124361632, 126.92576302560484); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
             
         displayMarker(locPosition);
             
@@ -65,18 +64,18 @@ function search1(){
             var lat = position.coords.latitude, 
                 lon = position.coords.longitude; 
             
-            var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
+            var locPosition = new kakao.maps.LatLng(37.58488124361632, 126.92576302560484); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
                 
             displayMarker(locPosition);
     
             
             
             ps.keywordSearch('인생네컷', placesSearchCB, {
-            location: new kakao.maps.LatLng(lat,lon),
-            radius : 2000
+            location: new kakao.maps.LatLng(37.58488124361632, 126.92576302560484),
+            radius : 3000
             })   
     
-           
+
             
         });
     
@@ -302,15 +301,15 @@ if (navigator.geolocation) {
         var lat = position.coords.latitude, 
             lon = position.coords.longitude; 
         
-        var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
+        var locPosition = new kakao.maps.LatLng(37.58488124361632, 126.92576302560484); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
             
         displayMarker(locPosition);
 
         
 
             ps.keywordSearch('포토이즘', placesSearchCB, {
-            location: new kakao.maps.LatLng(lat,lon),
-            radius : 2000
+            location: new kakao.maps.LatLng(37.58488124361632, 126.92576302560484),
+            radius : 3000
         })    
 
        
@@ -540,15 +539,15 @@ function search3(){
             var lat = position.coords.latitude, 
                 lon = position.coords.longitude; 
             
-            var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
+            var locPosition = new kakao.maps.LatLng(37.58488124361632, 126.92576302560484); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
                 
             displayMarker(locPosition);
     
             
     
                 ps.keywordSearch('포토시그니처', placesSearchCB, {
-                location: new kakao.maps.LatLng(lat,lon),
-                radius : 2000
+                location: new kakao.maps.LatLng(37.58488124361632, 126.92576302560484),
+                radius : 3000
             })    
     
            
@@ -778,15 +777,15 @@ function search4(){
             var lat = position.coords.latitude, 
                 lon = position.coords.longitude; 
             
-            var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
+            var locPosition = new kakao.maps.LatLng(37.58488124361632, 126.92576302560484); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성
                 
             displayMarker(locPosition);
     
             
     
                 ps.keywordSearch('하루필름', placesSearchCB, {
-                location: new kakao.maps.LatLng(lat,lon),
-                radius : 2000
+                location: new kakao.maps.LatLng(37.58488124361632, 126.92576302560484),
+                radius : 3000
             })    
     
            
