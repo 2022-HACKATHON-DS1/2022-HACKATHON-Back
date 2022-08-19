@@ -17,6 +17,7 @@ urlpatterns = [
     path('map/', mapapp_views.map, name='map'),
     path('event/', main_views.event, name='event'),
     path('reward/', main_views.reward, name='reward'),
+    path('detail_img/',main_views.detail_img, name='detail_img'),
     ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

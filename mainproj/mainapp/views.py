@@ -1,10 +1,34 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostModelForm
+import requests
+import json
+
+from django.shortcuts import render
+from django.http import HttpResponse
+from urllib.request import urlopen
+from urllib.parse import quote_plus
+from bs4 import BeautifulSoup
+
+from selenium import webdriver
+import time
+
+
+
+# brower = webdriver.Chrome('./chromedriver.exe')
+# url = 'https://www.instagram.com/explore/tags/%EC%9D%B8%EC%83%9D%EB%84%A4%EC%BB%B7%ED%8F%AC%EC%A6%88/'
+# brower.get(url)
+# 
+# html = brower.page_source
+# 
+# soup = BeautifulSoup(html, 'html.parser')
+# img1 = soup.select('div._aagv > img')[0]['src']
+# print(img1)
+
 # Create your views here.
 
 def home(request):
-    posts = Post.objects.all().order_by('-created')[:5]
+    posts = Post.objects.all().order_by('-created')[:6]
     return render(request, 'home.html', {'posts':posts})
 
 def detail(request, post_id):
@@ -42,3 +66,7 @@ def event(request):
 
 def reward(request):
     return render(request, 'reward.html')
+
+def detail_img(request):
+    return render(request, 'detail_img.html', {'img1':img1})
+
