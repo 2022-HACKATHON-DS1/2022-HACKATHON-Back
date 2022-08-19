@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/preview.css' %}">
+<!-- 이미지 -->
+
+<div class="imageSection">
+
+    <div class="image">
+        <img id="imagePreview" src="{{ value.url }}"/>
+    </div>
+	<br><br><br><br>
+	<div class="uploadMenu">
+        <input type="file" id="{{ id }}" class="custom-file-input" name="{{ name }}" accept="image/*" style="cursor: pointer;">
+          
+    </div>
+</div>
+<script>
+    var imgFieldCtrl = document.getElementById('{{ id }}')
+    imgFieldCtrl.addEventListener('change', function(e) {
+        if (imgFieldCtrl.files && imgFieldCtrl.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {   
+                document.getElementById('imagePreview').src = e.target.result;
+            }
+
+   // convert to base64 string
+        reader.readAsDataURL(document.getElementById('{{ id }}').files[0]); 
+    }
+});
+</script>
