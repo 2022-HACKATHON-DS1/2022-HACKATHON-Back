@@ -1,0 +1,138 @@
+@import 'drop.css';
+
+body{
+    margin: 0;
+    background-color: gray;
+}
+.container {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.80);
+    width: 420px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.contents{
+    height:66vh; 
+    padding:20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.fa-bars{
+    color:#FF4D00;
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo{
+    font-size: 35px ;
+    font-style: italic;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin:0;
+    margin-bottom: 30px;
+}
+
+
+.change-img{
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin:  0 auto;
+    margin-top:-670px;
+}
+
+.change-box{
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#input-text{
+    box-sizing: border-box;
+    width: 288px;
+    height: 44px;
+    background:none;
+    color: white;
+    border: 3px solid #FFFFFF;
+    display: block;
+    margin:0 auto;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+#text-btn{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.next-btn{
+    display: block;
+    width: 46px;
+    height: 24px;
+    background:none;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 380px;
+    text-align: center;
+}
+
+
+.color-pal li{
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    float: left;
+
+    margin-right:10px;
+    margin-top: 15px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.color-pal li:nth-child(1){
+    background-color: red;
+    border: none;
+    margin-left: 50px;
+}
+.color-pal li:nth-child(2){
+    background-color: orange;
+    border: none;
+}
+.color-pal li:nth-child(3){
+    background-color: yellow;
+    border: none;
+}
+.color-pal li:nth-child(4){
+    background-color: green;
+    border: none;
+}
+.color-pal li:nth-child(5){
+    background-color: blue;
+    border: none;
+}
+.color-pal li:nth-child(6){
+    background-color: purple;
+    border: none;
+}

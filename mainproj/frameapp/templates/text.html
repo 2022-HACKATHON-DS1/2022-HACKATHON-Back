@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/change.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/fc13d61e87.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>change</title>
+</head>
+<body>
+    <div class ="container">
+        <div> 
+            
+            <div class="navBox">
+
+            <div class="Logo">Dlstodsozjt</div>
+                <i class="fa-solid fa-bars fa-2x" id="drop"></i>
+            </div>
+                    <div class="dropdown">
+                        <li class="drop-box"><a href="" style="text-decoration: none;">새 글 작성</a></li>
+                        <li class="drop-box"><a href="" style="text-decoration: none;">마이페이지</a></li>
+                        <li class="drop-box"><a href="" style="text-decoration: none;">사진관 찾기</a></li>
+                        <li class="drop-box"><a href="" style="text-decoration: none;">이벤트</a></li>
+                    </div>
+        </div>
+
+		<form action="" method="POST" enctype="multipart/form-data">
+			<div class="change-box">
+				<div class="color-box">
+					<img src="3.png" class="change-img">
+					<div id="text-btn" onkeyup='printName()'>지은네컷</div>
+				</div>
+			</div>
+
+			{% csrf_token %}
+				{{ form.content }}
+
+			<div>
+				<input class="next-btn" type="submit" value="next">
+			</div>
+		</form>
+        
+
+    </div>
+	<script src="{% static 'js/drop.js' %}"></script>
+	<script src="{% static 'js/change.js' %}"></script>
+</body>
+</html>

@@ -72,7 +72,7 @@ function search1(){
             
             
             ps.keywordSearch('인생네컷', placesSearchCB, {
-            location: new kakao.maps.LatLng(lat,lon),
+            location: new kakao.maps.LatLng(37.58488124361632, 126.92576302560484),
             radius : 2000
             })   
     
