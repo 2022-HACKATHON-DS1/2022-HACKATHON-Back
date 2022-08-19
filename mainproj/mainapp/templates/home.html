@@ -8,29 +8,51 @@
   <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
   <title></title>
   <script src="https://kit.fontawesome.com/1c941d1499.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/drop.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/mainpage.css' %}?sd">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/mainpage.css' %}">
+
 </head>
 <body>          
      <div class="container">
         {% include 'nav.html' %}         
   
-        <div class="mainheader">MyCut</div>
-        <div class="contents">
-            <div id="slider">
-            <div class="image-box">
+        <div class="contentDiv">
+          <div class="headerDiv">
+            <div class="mainheader">my Cuts</div>
+          </div>      
+          
+          <div class="contents">
+            <div class="contentsDiv">
+              <!-- 사진 -->
+
               {% for post in posts %}
-                <a href="{% url 'detail' post.id %}"><img src="{{ post.image.url }}" alt="" width="180px" height="300px"></a>
-            
+              <a href="{% url 'detail' post.id %}">
+                <div class="imgDiv">
+                  <img class="imgimg" src="{{ post.image.url }}" height="100%" width="100%">
+                </div>
+              </a>
               {% endfor %}
             </div>
+          </div>        
         </div>
-     
-           
+    
+    
         
+        <script>   
+        var imgimg=document.querySelectorAll('.imgimg');
+       
         
-    </div>
-    </div>
+        for(var i=0; i<imgimg.length; i++){
+          var randomRotate=Math.floor((Math.random()*(10-1)+1)+3);
+          const item=imgimg.item(i);
+          if (i%2){
+            item.style.rotate= "-" + randomRotate + "deg";
+          }
+          else{
+          item.style.rotate= randomRotate + "deg";}
+        }  
+          
+        </script>
 
 <script src="{% static 'js/drop.js' %}"></script>
 

@@ -1,40 +1,30 @@
-{% load static %}
+{%load static%}
+<!-- load static은 정적 파일을 불러온다 추후에 설명한다.-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <script src="https://kit.fontawesome.com/1c941d1499.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/upload.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/drop.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="navBox">
-      <div class="Logo">Dlstodsozjt</div>
-      <i class="fa-solid fa-bars fa-2x"></i>
-      <div class="dropdown">
-        <i class="fa-solid fa-caret-left"></i>
-        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">새 글 작성</a></li>
-        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">마이페이지</a></li>
-        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">사진관 찾기</a></li>
-        <li class="drop-box"><a href="" style="text-decoration: none; color:#fff">이벤트</a></li>
-      </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{%static 'main/reset.css'%}">
+    <!-- {%static 'main/reset.css'%}은 정적파일의 경로를 불러온다. 추후에 설명한다.-->
+    <link rel="stylesheet" href="{%static 'main/base.css'%}">
+    <link rel="stylesheet" href="{%static 'main/detail_img.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>인스타그램 사진가져오기</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="search_section">
+        <form class="search_form" action="{%url 'main:detail_img'%}" method="get">
+            <h1>인스타그램 이미지 가져오기</h1>
+            <input type="text" placeholder=" 인스타그램 계정을 입력하세요.." name="account">
+            <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="result_section">
+        {%block content%}
+        {%endblock%}
+        <!--block 으로 템플릿을 확장한다-->
+      </section>
     </div>
-    {% block content %} 
-    {% endblock %}
-  </div>
-  <script src="{% static './js/drop.js' %}"></script>
-  <script src="{% static 'js/drop.js' %}"></script>
-</body>
+  </body>
 </html>
-
-
-
